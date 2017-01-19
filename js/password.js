@@ -1,14 +1,13 @@
 var password = {
-    //Rules are executed in order of appearance and their callbacks
-    //are passed the output string for further processing
+    // Add another object to the rules array here to add rules.
     rules: [
         {
             characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890',
-            max: 10
+            max: 12
         },
         {
-            characters: '!@#$%^&()+={}[]:;<>?,',
-            max: 2,
+            characters: '!@#$%^&*()_+|~-={}[]:";<>?,./',
+            max: 4,
             callback: function (s) {
                 var a = s.split(""),
                     n = a.length;

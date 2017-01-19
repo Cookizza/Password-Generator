@@ -18,15 +18,16 @@
 
         <div class="col-xs-6 col-xs-offset-3">
             <h1>Password Generator</h1>
+
             <p>This tool will generate passwords based on sets of rules provided inside password.js</p>
             <p>Customise the rules, add callbacks and reload this page to define your own</p>
-            <p>By default the generator will create a password that contains 10 letters/numbers of varying case, it then
-                adds 2 special characters. The 12 character string is then shuffled.</p>
+            <p>By default the generator will create a password that contains 12 letters/numbers of varying case, it then
+                adds 4 special characters. The 16 character string is then shuffled.</p>
 
             <div class="input-group">
                 <input type="text" class="form-control input-lg" id="password">
                   <span class="input-group-btn">
-                    <button class="btn btn-lg btn-default" onclick="$('#password').val(password.generate());">
+                    <button class="btn btn-lg btn-primary" onclick="$('#password').val(password.generate());">
                         Generate Password
                     </button>
                   </span>
