@@ -1,10 +1,15 @@
 var password = {
     // Add another object to the rules array here to add rules.
+    // They are executed from top to bottom, with callbacks in between if defined.
     rules: [
+
+        //Take a combination of 12 letters and numbers, both lower and upper case.
         {
             characters: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890',
             max: 12
         },
+
+        //Take 4 special characters, use the callback to shuffle the resulting 16 character string
         {
             characters: '!@#$%^&*()_+|~-={}[]:";<>?,./',
             max: 4,
