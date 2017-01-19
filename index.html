@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-xs-6 col-xs-offset-3">
+            <h1>Password Generator</h1>
+            <p>This tool will generate passwords based on sets of rules provided inside password.js</p>
+            <p>Customise the rules, add callbacks and reload this page to define your own</p>
+            <p>By default the generator will create a password that contains 10 letters/numbers of varying case, it then
+                adds 2 special characters. The 12 character string is then shuffled.</p>
+
+            <div class="input-group">
+                <input type="text" class="form-control input-lg" id="password">
+                  <span class="input-group-btn">
+                    <button class="btn btn-lg btn-default" onclick="$('#password').val(password.generate());">
+                        Generate Password
+                    </button>
+                  </span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="js/password.js"></script>
+
+</body>
+</html>
